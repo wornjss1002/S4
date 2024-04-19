@@ -1,0 +1,222 @@
+/*폰트*/
+@font-face {
+  font-family: 'BMJUA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+/* body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'BMJUA';
+}
+
+/* container */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* member card */
+.member_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  padding-top: 30px;
+}
+
+.member_container a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.card {
+  width: 250px;
+  flex-direction: column;
+}
+.card-img {
+  height: 333px;
+  display: flex;
+}
+
+.card-head {
+  height: 50px;
+  background-color: transparent;
+  border-bottom: 2px solid #333333;
+  line-height: 50px;
+}
+.card-footer {
+  height: 50px;
+  background-color: transparent;
+  line-height: 50px;
+  border-bottom: 2px solid #333333;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  transition-duration: 0.5s;
+  transform-box: content-box;
+}
+
+/* header */
+header {
+  background: #9c1c2b;
+  color: #fff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #846b6b 3px solid;
+}
+
+header h1 {
+  float: left;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header ul li {
+  display: inline;
+  padding: 0 20px;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* showcase */
+#showcase {
+  min-height: 600px;
+  background: #444 url('/img/1.png') no-repeat center center/cover;
+  text-align: center;
+}
+
+#showcase h1 {
+  margin-top: 100px;
+}
+#univ_showcase {
+  min-height: 600px;
+  background: #444 url('/img/school.jpg') no-repeat center center/cover;
+  text-align: center;
+  color: black;
+  height: 100%;
+}
+.campus {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 150px;
+}
+.campus .choong a {
+  text-decoration: none;
+  color: #0a3981;
+}
+.campus .nyang a {
+  text-decoration: none;
+  color: #07953b;
+}
+.campus .choong a:hover {
+  color: black;
+}
+.campus .nyang a:hover {
+  color: black;
+}
+.choong h3 {
+  margin-top: 200px;
+  margin-left: 130px;
+}
+.nyang h4 {
+  margin-top: 200px;
+  margin-left: 160px;
+}
+
+.choong {
+  width: 100%;
+  height: auto;
+}
+.campus img {
+  margin-top: 100px;
+  width: 600px;
+  height: 400px;
+  border-radius: 5%;
+}
+/* boxes */
+
+#boxes {
+  padding: 20px 0 100px 0;
+  font-size: 40px;
+}
+
+#joongbu {
+  display: block;
+}
+#boxes h2 {
+  margin-top: 100px;
+  font-size: 50px;
+  text-align: center;
+}
+#boxes h5 {
+  margin-top: 500px;
+  font-size: 50px;
+  text-align: center;
+}
+#boxes .box {
+  float: left;
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+.box img {
+  width: 300px;
+  height: auto;
+}
+#boxes .box h3 {
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: rgb(61, 60, 60);
+}
+
+#boxes .box p {
+  margin-bottom: 20px;
+  color: darkgray;
+}
+#boxes p {
+  text-align: center;
+}
+/* footer */
+footer {
+  background: #152a49;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+#inf {
+  text-decoration: none;
+  color: rgb(251, 11, 207);
+  margin-top: 300px;
+  margin-left: 1200px;
+}
+#inf:hover {
+  color: black;
+}
