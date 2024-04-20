@@ -3,8 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TeamS4|Main</title>
+    <title>TeamS4|University</title>
     <link rel="stylesheet" href="css\univ.css" />
+    <style>
+      /* Add this CSS for vertical centering */
+      body,
+      html {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      .container {
+        flex: 1;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -13,55 +27,95 @@
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">학교</a></li>
-            <li><a href="#">학과소개</a></li>
-            <li><a href="#">수업 커리큘럼</a></li>
-            <li><a href="#">교수</a></li>
-            <li><a href="#">동아리</a></li>
+            <li><a href="about.html">학교</a></li>
+            <li><a href="major.html">학과소개</a></li>
+            <li><a href="major.html">수업 커리큘럼</a></li>
+            <li><a href="professor.html">교수</a></li>
+            <li><a href="club.html">동아리</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-    <section id="showcase">
-      <div class="container">
-        <h1>ㅇ</h1>
-        <h2>ㅇ</h2>
-        <h3>ㅇ</h3>
-        <h4>ㅇ</h4>
-        <h5>ㅇ</h5>
-        <h6>ㅇ</h6>
-      </div>
-    </section>
-
+    <section id="univ_showcase"></section>
     <section id="boxes">
       <div class="container">
-        <div class="box">
-          <h3>정보보안 인재 양성</h3>
-          <p>
-            중부대학교 정보보호학과는 최고의 교육으로 우리나라를 이끌어가는 보안
-            인재를 양성합니다.
-          </p>
+        <a id="joongbu" href="https://www.joongbu.ac.kr/home/">
+          <img src="https://www.joongbu.ac.kr/home/img/sub/0105030200_07.jpg" />
+        </a>
+        <h2>
+          국제캠퍼스(충청)와 창의캠퍼스(고양)로 어디서나 가까운 대학!<br />
+          <span id="sayhi">나의 꿈도 가까워집니다.</span>
+        </h2>
+
+        <div class="campus">
+          <div class="choong">
+            <a href="https://www.joongbu.ac.kr/menu.es?mid=a10106010000"
+              ><h3>국제캠퍼스(충청)</h3>
+              <img
+                src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzExMTdfODcg%2FMDAxNTEwODk1Mzk0OTk1.6LTuVWgnDQ1TZqrRVmb8Q_kuS6ypx_AHHwf23XgGI6Ig.tWNNt1OcezDIFF5_L1NdhFpRsT0b0WjbILZLufD75HQg.JPEG.joongbu_univ%2F12ST1046.jpg&type=sc960_832"
+                alt="" /></a
+            ><br />
+            <a
+              href="https://map.naver.com/p/directions/-/14187688.148367591,4327202.349925974,%EC%A4%91%EB%B6%80%EB%8C%80%ED%95%99%EA%B5%90,11593502,PLACE_POI/-/transit?c=15.00,0,0,0,dh"
+              >주소 : 충청남도 금산군 추부면 대학로 201</a
+            >
+          </div>
+          <div class="nyang">
+            <a href="https://www.joongbu.ac.kr/menu.es?mid=a10107010000"
+              ><h4>창의캠퍼스(고양)</h4>
+              <img
+                src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5429%2F2022%2F09%2F01%2F0000019572_001_20220901171002817.jpg&type=sc960_832"
+                alt="" /><br /></a
+            ><a
+              href="https://map.naver.com/p/directions/-/14125320.691205919,4539052.89088733,%EC%A4%91%EB%B6%80%EB%8C%80%ED%95%99%EA%B5%90%EA%B3%A0%EC%96%91%EC%BA%A0%ED%8D%BC%EC%8A%A4,21274596,PLACE_POI/-/transit"
+              >주소 : 경기도 고양시 덕양구 동헌로 305</a
+            >
+          </div>
         </div>
-        <div class="box">
-          <h3>최고의 교수진</h3>
-          <p>
-            한국정보보호학회 교육이사/부회장, 융합보안학회 이사 등 최고의 경력을
-            가진 수준 높은 교수님들의 교육을 제공합니다.
-          </p>
+        <h6>인재 교육 지향 방향</h6>
+        <div class="box_y">
+          <div class="box">
+            <img
+              src="https://cdn.icon-icons.com/icons2/1893/PNG/512/scientistavatar_120780.png"
+              alt=""
+            />
+            <h3>자유를 누리고 진리를 터득하여 미래를 창조하는 ‘바른 인재’</h3>
+          </div>
+          <div class="box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1884/1884795.png"
+              alt=""
+            />
+            <h3>전문성을 갖추어 첨단과학기술시대를 이끌 ‘창의 인재’</h3>
+          </div>
+          <div class="box">
+            <img
+              src="https://st3.depositphotos.com/13905956/18090/v/450/depositphotos_180901232-stock-illustration-planet-earth-icon-earth-globe.jpg"
+              alt=""
+            />
+            <h3>지구촌시대의 인류사회에 공헌할 ‘국제 인재’</h3>
+          </div>
         </div>
-        <div class="box">
-          <h3>유망한 진로</h3>
-          <p>
-            정보화 시대, AI 시대를 맞이한 지금 사회에서 가장 필요로 하는
-            정보보안 분야는 세계 각지에서 활약하고 있습니다.
-          </p>
+        <h5>역사</h5>
+        <div class="history">
+          <img src="http://www.ikidok.org/news_img/1129101515.jpg" />
+          <div class="history_p">
+            <p>
+              중부학원의 설립자는 이영수 목사이다. 중부학원은 기독교 신학교육을
+              실시하기 위하여 대전신학교를 설치, 경영함의 목적으로 1982년 12월
+              7일 문교부에 설립 신청하였다.
+            </p>
+            <p>
+              중부학원의 설립인가에 발맞추어 재단에서는 1983년 11월30일에
+              정식으로 중부신학교 설립허가를 신청하여, 1984년 2월
+              29일「교육법」제85조의 규정에 의거하여 대학의 설립인가를 받았다.
+            </p>
+          </div>
         </div>
-        <div class="box">
-          <h3>Team S4</h3>
-          <p>
-            Team S4는 이러한 최고의 학과 중부대학교 정보보호학과를 홍보합니다!
-          </p>
+        <div class="information">
+          <a id="inf" href="https://www.joongbu.ac.kr/index.es?sid=a6"
+            >입학 정보 홈페이지</a
+          >
         </div>
       </div>
     </section>
