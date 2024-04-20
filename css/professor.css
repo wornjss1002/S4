@@ -130,6 +130,9 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+  .p-container {
+    width: 100%;
+  }
   .left-box .photo {
     order: 1;
     margin-left: auto;
@@ -159,6 +162,33 @@ body {
     order: 1;
     width: 0%;
     height: 0%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left-box,
+  .right-box {
+    flex-direction: column;
+    width: 100%;
+  }
+  .p-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .left-box .intro,
+  .right-box .intro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .left-box .photo,
+  .right-box .photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
   .container ul {
     display: grid;

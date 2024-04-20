@@ -9,18 +9,6 @@
 
 /* media칸 */
 @media (max-width: 768px) {
-  .table-width {
-    width: 100%;
-  }
-  .table-width table {
-    width: 100%;
-  }
-  caption {
-    width: 100%;
-  }
-  #boxes .box {
-    width: 100%;
-  }
   .container ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -29,6 +17,70 @@
   .container ul li {
     margin: 0;
     padding: 0;
+  }
+
+  .c-container {
+    max-width: 400px;
+  }
+
+  #boxes .box {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+
+  #boxes .box1 {
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+
+  .table-width {
+    margin-bottom: 20px;
+    font-size: 5.53px;
+    max-width: 400px;
+  }
+
+  .table-width table {
+    /* 테이블 전체 너비를 사용 */
+    border-collapse: collapse;
+    white-space: nowrap;
+    /* 텍스트가 줄 바꿈되지 않도록 설정 */
+  }
+
+  .box .table-width th,
+  td {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 1px;
+    text-align: center;
+    width: 16.66%;
+    /* 테이블에 6개의 열이 있으므로 (100% / 6) = 16.66% */
+  }
+
+  .box1 .table-width table th,
+  td {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 1px;
+    text-align: center;
+    width: 16.66%;
+    /* 테이블에 6개의 열이 있으므로 (100% / 6) = 16.66% */
+  }
+
+  .table-width caption {
+    font-size: 10px;
+    color: #1a5d9f;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 20px;
+    padding: 7px;
+    width: 90px;
+  }
+
+  footer {
+    width: 100%;
   }
 }
 
@@ -44,47 +96,6 @@ body {
   width: 90%;
   margin: auto;
   overflow: hidden;
-}
-
-/* member card */
-.member_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  place-items: center;
-  padding-top: 30px;
-}
-
-.member_container a {
-  text-decoration: none;
-  color: #333333;
-}
-
-.card {
-  width: 250px;
-  flex-direction: column;
-}
-.card-img {
-  height: 333px;
-  display: flex;
-}
-
-.card-head {
-  height: 50px;
-  background-color: transparent;
-  border-bottom: 2px solid #333333;
-  line-height: 50px;
-}
-.card-footer {
-  height: 50px;
-  background-color: transparent;
-  line-height: 50px;
-  border-bottom: 2px solid #333333;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  transition-duration: 0.5s;
-  transform-box: content-box;
 }
 
 /* header */
@@ -167,11 +178,12 @@ header ul li a {
 }
 
 .box {
-  margin: 20px;
+  margin: 80px;
   gap: 80px;
   display: flex;
   flex-direction: column;
 }
+
 .box .table-width th {
   background-color: #193658;
 }
@@ -179,7 +191,7 @@ header ul li a {
 /* boxes box1*/
 
 #boxes .box1 {
-  float: right;
+  float: left;
   padding: 20px;
   text-align: center;
   background-color: #f5f5f5;
@@ -196,7 +208,7 @@ header ul li a {
 }
 
 .box1 {
-  margin: 40px;
+  margin: 20px;
   gap: 80px;
   display: flex;
   flex-direction: column;
@@ -205,15 +217,18 @@ header ul li a {
 .box1 .table-width th {
   background-color: #193658;
 }
+
 /* table */
 .table-width {
   margin-bottom: 20px;
 }
 
 table {
-  width: 100%; /* 테이블 전체 너비를 사용 */
+  width: 100%;
+  /* 테이블 전체 너비를 사용 */
   border-collapse: collapse;
-  white-space: nowrap; /* 텍스트가 줄 바꿈되지 않도록 설정 */
+  white-space: nowrap;
+  /* 텍스트가 줄 바꿈되지 않도록 설정 */
 }
 
 th,
@@ -231,7 +246,8 @@ td {
 /* 각 열의 너비를 동일하게 설정 */
 th,
 td {
-  width: 16.66%; /* 테이블에 6개의 열이 있으므로 (100% / 6) = 16.66% */
+  width: 16.66%;
+  /* 테이블에 6개의 열이 있으므로 (100% / 6) = 16.66% */
 }
 
 caption {
@@ -240,6 +256,7 @@ caption {
   border: 3px solid rgb(0, 0, 0);
   margin: 20px;
   padding: 7px;
+  width: 270px;
 }
 
 /* footer */
