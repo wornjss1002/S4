@@ -160,4 +160,13 @@ body {
     width: 0%;
     height: 0%;
   }
+  .container ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .container ul li {
+    margin: 0;
+    padding: 0;
+  }
 }

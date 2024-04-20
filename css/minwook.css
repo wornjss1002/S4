@@ -10,26 +10,25 @@
 /* media칸 */
 @media (max-width: 768px) {
   .table-width {
-    margin-bottom: 20px;
+    width: 100%;
   }
-
-  table {
-    width: 30%; /* 테이블 전체 너비를 사용 */
-    border-collapse: collapse;
-    white-space: nowrap; /* 텍스트가 줄 바꿈되지 않도록 설정 */
+  .table-width table {
+    width: 100%;
   }
-
-  th,
-  td {
-    border: 2px solid rgb(0, 0, 0);
-    padding: 20px;
-    text-align: center;
+  caption {
+    width: 100%;
   }
-
-  /* 각 열의 너비를 동일하게 설정 */
-  th,
-  td {
-    width: 16.66%; /* 테이블에 6개의 열이 있으므로 (100% / 6) = 16.66% */
+  #boxes .box {
+    width: 100%;
+  }
+  .container ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .container ul li {
+    margin: 0;
+    padding: 0;
   }
 }
 

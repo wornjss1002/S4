@@ -193,4 +193,13 @@ footer {
   #showcase .maincon .concon {
     order: 2;
   }
+  .container ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .container ul li {
+    margin: 0;
+    padding: 0;
+  }
 }
